@@ -36,14 +36,11 @@ def plot_linear_boundary(clf, X, y):
     y_vals = -(w[0] * x_vals + b) / w[1]
     plt.plot(x_vals, y_vals, 'k--')
     
-    plt.title("SVM with Linear Kernel [Faiz Moulavi 45]")
+    plt.title("SVM with Linear Kernel [Aaditya Mourya 46]")
     plt.show()
-
+    
 # Plot decision boundary
 plot_linear_boundary(svm_clf, X, y)
-
-
-
 
 
 
@@ -86,7 +83,7 @@ def plot_decision_boundary(clf, X, y):
     # plot decision boundary
     plt.contourf(xx, yy, Z, alpha=0.3, cmap=plt.cm.coolwarm)
     plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.coolwarm, edgecolors="k")
-    plt.title("SVM with RBF Kernel (Kernel Trick) by Faiz Moulavi 45")
+    plt.title("SVM with RBF Kernel (Kernel Trick) by Aaditya Mourya 46")
     plt.show()
 
 # Plot decision boundary
